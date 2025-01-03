@@ -1,0 +1,76 @@
+PARA MEDIR EL TIEMPO DE EJECUCION --------------------------
+
+import time
+
+t = time.time()
+
+- Para medir la diferencia de tiempo de ejecucion al ejecutar un bucle:
+
+t = time.time()
+for i in range(len(x)):
+    y = np.append(y,f(x[i]))
+t1 = time.time() - t
+
+
+-----------------------------------------------------------
+FORMA MAS OPTIMA:
+
+#%% reservamos espacio antes de entrar en el bucle
+y = np.zeros_like(x)
+
+t = time.time()
+for i in range(len(x)):
+    y[i] = np.append(y,f(x[i]))
+t2 = time.time() - t
+
+--------------------------------------------------------------
+
+PARA MOSTRAR GRÁFICAS
+
+
+import matplotlib.pyplot as plt
+
+
+plt.figure() // crea la ventana de la gráfica
+plt.plot(x,y,'o') // muestra los valores de x e y con puntos pintados en naranja (orange = 'o')
+plt.show() // muestra la ventana de la gráfica
+
+
+// MOSTRAR 5 PUNTOS
+import numpy as np
+import matplotlib.pyplot as plt
+
+f = lambda x: np.exp(x)
+x = np.linspace(-1,1,5)
+y = f(x)
+
+plt.figure()
+plt.plot(x,y,'o')
+plt.show()
+
+// MOSTRAR UNA LINEA CONTINUA
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+f = lambda x: np.exp(x)
+x = np.linspace(-1,1)
+y = f(x)
+
+plt.figure()
+plt.plot(x,y)
+plt.show()
+
+
+
+
+----------------------------------------------------
+funcion e^x y la del polinomio de taylor (son iguales)
+
+e^x = 1 + (x/1!) + ((x^2)/2!) + ...
+
+
+
+--------------------------------------------------------
+1.e-8 // es lo mismo que 10^-8
+

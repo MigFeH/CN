@@ -1,0 +1,9 @@
+Si d2f(x0) < 0 => maximo (derivada segunda de f en x0) y pintamos punto rojo
+	plt.plot(x0,f(x0),'ro')
+	
+Si d2f(x0) > 0 => minimo (derivada segunda de f en x0) y pintamos punto verde
+	plt.plot(x0,f(x0),'go')
+	
+Puntos de inflexion en azul
+	pi <--- np.array
+	plt.plot(pi,f(pi),'bo')

@@ -1,0 +1,29 @@
+Página de las prácticas: https://www.unioviedo.es/compnum/compnum_NG
+
+IDE a trabajar (IDE Spyder): https://www.anaconda.com/products/distribution
+
+#%% (separa celdas)
+
+
+np.arange(comienzo, finSinContarlo, salto) // (start,not to stop, step) 
+- si le quitas el paso el por defecto es 1
+- si le quitas el comienzo el por defecto es 0
+
+linspace(comienzo, finIncluido, numeroDePuntos) // se basa en el linspace de mathlab
+
+
+np.dot(A,B) // multiplica matricialmente dos arrays bidimensionales
+
+
+-- FUNCIONES --
+
+import numpy as np
+a = np.arange(5)
+
+f1 = lambda x: x**3
+f2 = lambda x,y: x**2 + y**2
+
+c = f1(a)
+d = f2(a,a)
+
+---------------------

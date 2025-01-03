@@ -1,0 +1,10 @@
+El algoritmo de Horner (Rufini) nos sirve para calcular el valor de un polinomio en un punto.
+El resto es el valor de p en un punto x
+
+Dividendo = (divisor * cociente) + resto
+
+El ejercicio 3 fue un ejercicio de examen
+
+El algoritmo de horner lo aplicas tantas veces como grado del polinomio + 1 ( o numero de elementos de p). Por tanto,
+tendremos tantos restos como lo indicado antes.
+
